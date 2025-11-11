@@ -8,6 +8,7 @@ import AboutStats from '../utils/AnimatedStat';
 import { services, features, testimonials, process, aboutFeatures } from '../data/data';
 import { useNavigate } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
+import ContactForm from '../components/ContactForm';
 
 // Map icon names to components
 const iconMap = { Search, Shield, Eye, Users, Target, Phone, Clock, Award, CheckCircle };
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <div className="app">
       {/* Hero Section */}
-      
+
       <HeroSection />
       {/* Services Section */}
       <section className="services" id="services">
@@ -95,21 +96,25 @@ export default function Home() {
 
       {/* Process Section */}
       <section className="process-section">
-        <div className="container">
-          <h2 className="section-title">Our Investigation Process
-          </h2>
-          <p className="section-subtitle">Our systematic approach to delivering reliable results</p>
-          <div className="process-timeline">
-            {process.map((item, index) => (
-              <div key={index} className="process-item">
-                <div className="process-step">{item.step}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+        <div className="process-wrapper">
+          <div className="container">
+            <h2 className="section-title">Our Investigation Process</h2>
+            <p className="section-subtitle">
+              Our systematic approach to delivering reliable results
+            </p>
+            <div className="process-timeline">
+              {process.map((item, index) => (
+                <div key={index} className="process-item">
+                  <div className="process-step">{item.step}</div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* Testimonials Section */}
       <section className="testimonials-section">
@@ -140,59 +145,43 @@ export default function Home() {
 
       {/* Contact Section */}
       <section className="contact" id="contact">
-        <div className="container">
-          <h2 className="section-title">Get In Touch</h2>
-          <p className="section-subtitle">Confidential consultation available 24/7</p>
-          <div className="contact-content">
-            <div className="contact-info">
-              <div className="contact-item">
-                <Phone size={24} />
-                <div>
-                  <h4>Phone</h4>
-                  <p>+91 898 7883 739</p>
-                  <span className="contact-note">Available 24/7</span>
+        <div className="contact-wrapper">
+          <div className="container">
+            <h2 className="section-title">Get In Touch</h2>
+            <p className="section-subtitle">Confidential consultation available 24/7</p>
+            <div className="contact-content">
+              <div className="contact-info">
+                <div className="contact-item">
+                  <Phone size={24} />
+                  <div>
+                    <h4>Phone</h4>
+                    <p>+91 898 7883 739</p>
+                    <span className="contact-note">Available 24/7</span>
+                  </div>
+                </div>
+                <div className="contact-item">
+                  <Mail size={24} />
+                  <div>
+                    <h4>Email</h4>
+                    <p>info@truefind.com</p>
+                    <span className="contact-note">Response within 24 hours</span>
+                  </div>
+                </div>
+                <div className="contact-item">
+                  <MapPin size={24} />
+                  <div>
+                    <h4>Location</h4>
+                    <p>123 Mystery Lane, Suite 400<br />New York, NY 10001</p>
+                    <span className="contact-note">By appointment only</span>
+                  </div>
                 </div>
               </div>
-              <div className="contact-item">
-                <Mail size={24} />
-                <div>
-                  <h4>Email</h4>
-                  <p>info@truefind.com</p>
-                  <span className="contact-note">Response within 24 hours</span>
-                </div>
-              </div>
-              <div className="contact-item">
-                <MapPin size={24} />
-                <div>
-                  <h4>Location</h4>
-                  <p>123 Mystery Lane, Suite 400<br />New York, NY 10001</p>
-                  <span className="contact-note">By appointment only</span>
-                </div>
-              </div>
-            </div>
-            <div className="contact-form">
-              <h3 className="form-title">Send Us a Message</h3>
-              <input type="text" placeholder="Your Name *" required />
-              <input type="email" placeholder="Your Email *" required />
-              <input type="tel" placeholder="Phone Number *" required />
-              <select className="form-select">
-                <option value="">Select Service Type</option>
-                <option value="background">Background Check</option>
-                <option value="corporate">Corporate Investigation</option>
-                <option value="surveillance">Surveillance</option>
-                <option value="missing">Missing Person</option>
-                <option value="fraud">Fraud Investigation</option>
-                <option value="other">Other</option>
-              </select>
-              <textarea placeholder="Tell us about your case... *" rows="5" required></textarea>
-              <p className="privacy-note">🔒 All information is kept strictly confidential</p>
-              <button className="btn btn-primary" onClick={() => alert('Thank you for contacting True Find Detective Agency. We will review your case and get back to you within 24 hours.')}>
-                Send Message
-              </button>
+              <ContactForm />
             </div>
           </div>
         </div>
       </section>
+
 
       {/* CTA Banner */}
       <section className="cta-banner">

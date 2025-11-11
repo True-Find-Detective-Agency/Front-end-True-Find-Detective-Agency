@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Award, Users, Eye, Target, CheckCircle } from 'lucide-react';
 import "../css/about.css"
+import AboutStats from '../utils/AnimatedStat';
 
 function About() {
   const values = [
@@ -93,24 +94,7 @@ function About() {
                   our trademark.
                 </p>
               </div>
-              <div className="story-stats">
-                <div className="stat-box">
-                  <div className="stat-number">20+</div>
-                  <div className="stat-label">Years of Service</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-number">2000+</div>
-                  <div className="stat-label">Cases Solved</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-number">98%</div>
-                  <div className="stat-label">Success Rate</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-number">50+</div>
-                  <div className="stat-label">Expert Team</div>
-                </div>
-              </div>
+              <AboutStats />
             </div>
           </div>
         </section>
