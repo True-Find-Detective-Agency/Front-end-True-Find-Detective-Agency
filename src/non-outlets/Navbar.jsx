@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Shield, Menu, X } from "lucide-react";
-import { Phone } from "lucide-react";
+import { Shield, Menu, X, Home, Info, Briefcase, Phone, MapPin } from "lucide-react";
 import logo from "../assets/logo1.png"
 
 import "../css/navbar.css"
@@ -45,17 +44,58 @@ function Navbar() {
           </button>
 
           <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-            <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-            <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-            <li><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
-            <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
-            <li><Link to="/branches" onClick={() => setMenuOpen(false)}>Branches</Link></li>
-            <li><Link to="/why-us" onClick={() => setMenuOpen(false)}>Why Us</Link></li>
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                <Home size={18} style={{ marginRight: "6px" }} />
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/about" onClick={() => setMenuOpen(false)}>
+                <Info size={18} style={{ marginRight: "6px" }} />
+                About
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/services" onClick={() => setMenuOpen(false)}>
+                <Briefcase size={18} style={{ marginRight: "6px" }} />
+                Services
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                <Phone size={18} style={{ marginRight: "6px" }} />
+                Contact
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/branches" onClick={() => setMenuOpen(false)}>
+                <MapPin size={18} style={{ marginRight: "6px" }} />
+                Branches
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/why-us" onClick={() => setMenuOpen(false)}>
+                <Shield size={18} style={{ marginRight: "6px" }} />
+                Why Us
+              </Link>
+            </li>
+
+            <button className="nav-call">
+              <Phone size={18} color="#fff" style={{ marginRight: "6px" }} />
+            </button>
           </ul>
 
-          <div className="nav-call">
+
+          <button className="nav-call not-active">
             <Phone size={18} color="#fff" style={{ marginRight: "6px" }} />
-          </div>
+          </button>
+
 
 
         </div>
