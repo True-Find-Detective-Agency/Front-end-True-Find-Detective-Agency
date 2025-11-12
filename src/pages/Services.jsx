@@ -22,15 +22,15 @@ const iconMap = {
 function Services() {
   const [activeService, setActiveService] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('Select');
 
   // Get unique categories from services for dropdown
-  const categories = ['all', ...new Set(detailedServices.map(s => s.title))];
+  const categories = ['Select', ...new Set(detailedServices.map(s => s.title))];
 
   const filteredServices = detailedServices.filter(service => {
     const matchesSearch = service.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           service.description.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesCategory = selectedCategory === 'all' || service.title === selectedCategory;
+    const matchesCategory = selectedCategory === 'Select' || service.title === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 

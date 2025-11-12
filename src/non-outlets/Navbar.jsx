@@ -1,22 +1,43 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Shield, Menu, X } from "lucide-react";
+import { Phone } from "lucide-react";
+import logo from "../assets/logo1.png"
 
 import "../css/navbar.css"
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navTo = useNavigate();
+
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar?.classList.add('scrolled');
+      } else {
+        navbar?.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
 
   return (
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <div className="logo">
-            <Shield size={32} />
-            <span>TRUE FIND DETECTIVE AGENCY</span>
+          <div className="nav-logo">
+            <img src={logo} onClick={() => navTo("/")} alt="" />
+
           </div>
-          
-          <button 
-            className="menu-toggle" 
+
+          <button
+            className="menu-toggle"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -31,6 +52,12 @@ function Navbar() {
             <li><Link to="/branches" onClick={() => setMenuOpen(false)}>Branches</Link></li>
             <li><Link to="/why-us" onClick={() => setMenuOpen(false)}>Why Us</Link></li>
           </ul>
+
+          <div className="nav-call">
+            <Phone size={18} color="#fff" style={{ marginRight: "6px" }} />
+          </div>
+
+
         </div>
       </nav>
 
