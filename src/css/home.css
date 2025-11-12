@@ -249,6 +249,10 @@ section::before {
   overflow: hidden;
 }
 
+
+.service-card:hover::after {
+  background: rgba(0,0,0,0.3); /* darker on hover */
+}
 .service-card::before {
   content: '';
   position: absolute;
@@ -268,7 +272,6 @@ section::before {
 }
 
 .service-card:hover {
- 
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -303,6 +306,11 @@ section::before {
   color: var(--text-tertiary);
   line-height: 1.8;
   margin-bottom: 1rem;
+   transition: color var(--transition-fast);
+}
+
+.service-card:hover p {
+  color: white;
 }
 
 .service-details {
