@@ -169,7 +169,7 @@
 
   .nav-links {
     position: fixed;
-    top: 0;
+    top: -6rem;
     right: -120%;
     height: 100vh;
     width: min(400px, 90vw);

@@ -1,4 +1,6 @@
-
+*{
+    cursor: none !important;
+}
 .cursor {
     position: fixed;
     top: 0;
@@ -14,6 +16,5 @@
 /* 🔸 When hovering clickable things */
 .cursor.clickable {
     transform: translate(-50%, -50%) scale(1.1);
-
     border-color: transparent;
 }
