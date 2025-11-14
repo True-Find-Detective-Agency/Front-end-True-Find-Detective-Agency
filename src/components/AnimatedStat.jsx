@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-function AnimatedStat({ target, suffix = "", startAnimation }) {
+export function AnimatedStat({ target, suffix = "", startAnimation }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

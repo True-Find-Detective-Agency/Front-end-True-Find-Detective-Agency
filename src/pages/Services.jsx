@@ -88,68 +88,39 @@ function Services() {
                   const Icon = iconMap[service.icon];
                   return (
                     <div className="service-item" key={index}>
-
-                      {/* If index is even → image first */}
-                      {index % 2 === 0 ? (
-                        <>
-                          <div className="service-img-box">
-                            <img src={service.imgUrl} alt={service.title} />
-                          </div>
-
-                          <div
-                            className={`service-card ${activeService === index ? "active" : ""}`}
-                            onClick={() => setActiveService(activeService === index ? null : index)}
-                          >
-                            <div className="service-icon">
-                              {Icon && <Icon size={40} />}
-                            </div>
-                            <h3>{service.title}</h3>
-                            <p className="service-description">{service.description}</p>
-
-                            <div className={`service-details ${activeService === index ? "show" : ""}`}>
-                              <h4>What's Included:</h4>
-                              <ul className="features-list">
-                                {service.features.map((feature, idx) => (
-                                  <li key={idx}>{feature}</li>
-                                ))}
-                              </ul>
-                              <div className="service-price">{service.price}</div>
-                            </div>
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          {/* If index is odd → card first */}
-                          <div
-                            className={`service-card ${activeService === index ? "active" : ""}`}
-                            onClick={() => setActiveService(activeService === index ? null : index)}
-                          >
-                            <div className="service-icon">
-                              {Icon && <Icon size={40} />}
-                            </div>
-                            <h3>{service.title}</h3>
-                            <p className="service-description">{service.description}</p>
-
-                            <div className={`service-details ${activeService === index ? "show" : ""}`}>
-                              <h4>What's Included:</h4>
-                              <ul className="features-list">
-                                {service.features.map((feature, idx) => (
-                                  <li key={idx}>{feature}</li>
-                                ))}
-                              </ul>
-                              <div className="service-price">{service.price}</div>
-                            </div>
-                          </div>
-
-                          <div className="service-img-box">
-                            <img src={service.imgUrl} alt={service.title} />
-                          </div>
-                        </>
+                      {index % 2 === 0 && (
+                        <div className="service-img-box">
+                          <img src={service.imgUrl} alt={service.title} />
+                        </div>
                       )}
+                      <div
+                        className={`service-card ${activeService === index ? "active" : ""}`}
+                        onClick={() => setActiveService(activeService === index ? null : index)}
+                      >
+                        <div className="service-icon">
+                          {Icon && <Icon size={40} />}
+                        </div>
+                        <h3>{service.title}</h3>
+                        <p className="service-description">{service.description}</p>
 
+                        <div className={`service-details ${activeService === index ? "show" : ""}`}>
+                          <h4>What's Included:</h4>
+                          <ul className="features-list">
+                            {service.features.map((feature, idx) => (
+                              <li key={idx}>{feature}</li>
+                            ))}
+                          </ul>
+                          <div className="service-price">{service.price}</div>
+                        </div>
+                      </div>
+                      {index % 2 !== 0 && (
+                        <div className="service-img-box">
+                          <img src={service.imgUrl} alt={service.title} />
+                        </div>
+                      )}
                     </div>
 
-                  );
+                  )
                 })}
               </div>
             ) : (

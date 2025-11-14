@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, Award, Users, Eye, Target, CheckCircle } from 'lucide-react';
 import "../css/about.css"
 import AboutStats from '../components/AnimatedStat';
-import achievement from "../assets/achievment.png"
+
 
 function About() {
   const values = [
@@ -152,7 +152,7 @@ function About() {
           <div className="container">
             <h2 className="section-title">Our Achievements</h2>
             <div className="achievements-grid-container">
-                <img src={achievement} alt="" />
+                <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763115935/achievment_mapmsd.png" alt="" />
               <div className="achievements-grid">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="achievement-item">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Eye, Search, ArrowRight } from 'lucide-react';
-import logo from "../assets/logo1.png"
+
 import "../css/welcome.css"
 
 function Welcome({ onComplete }) {
@@ -45,7 +45,7 @@ function Welcome({ onComplete }) {
 
                     {/* Logo */}
                     <div className="welcome-logo">
-                        <img src={logo} alt="" />
+                        <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763115701/logo1_gydvij.png" alt="" />
                     </div>
 
                     {/* Text Content */}
