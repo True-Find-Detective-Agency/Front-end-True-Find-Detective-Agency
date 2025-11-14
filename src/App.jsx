@@ -16,7 +16,7 @@ import SmoothScroll from "./utils/SmoothScroll";
 import Welcome from "./pages/Welcome";
 
 function App() {
-  const [showWelcome, setShowWelcome] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(true);
 
   const handleWelcomeComplete = () => {
     setShowWelcome(false);
