@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; // useEffect imported
+import React, { useState,  } from "react"; // useEffect imported
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./layouts/Layout";
@@ -20,7 +20,6 @@ const hasVisited = sessionStorage.getItem("visited");
 
 function App() {
 
-  const [showWelcome, setShowWelcome] = useState(true);
 
   // Initialize showWelcome based on sessionStorage. If 'visited' is NOT present, show Welcome (true).
   const [showWelcome, setShowWelcome] = useState(!hasVisited);
