@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from "react";
-import { MapPin, Phone, Mail, Clock, Navigation, Search, Building } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Search, } from 'lucide-react';
 import "../css/branches.css";
 
 import { Autoplay } from "swiper/modules";
@@ -55,10 +55,10 @@ function Branches() {
         {/* Hero */}
         <section className="branches-hero">
           <div className="container">
-            <Building size={64} className="hero-icon" />
+            
             <h1 className="page-title">Our Branches</h1>
             <p className="page-subtitle">
-              Nationwide coverage with professional investigators in major cities across America
+              Nationwide coverage with professional investigators in major cities across India
             </p>
           </div>
         </section>
