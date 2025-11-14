@@ -30,7 +30,7 @@ export default function Home() {
           <p className="section-subtitle">
             Comprehensive investigative solutions tailored to your needs
           </p>
-          <div className="services-grid">
+          <div className="services-grid home-services-grid">
             {services.map((service, index) => {
               const IconComponent = iconMap[service.icon];
               return (

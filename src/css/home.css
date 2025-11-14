@@ -232,9 +232,9 @@ section::before {
   margin-right: auto;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+.services-grid.home-services-grid{
+  display: grid ;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) ;
   gap: 2.5rem;
 }
 

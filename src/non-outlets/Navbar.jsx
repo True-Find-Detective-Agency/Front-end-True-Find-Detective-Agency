@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Shield, Menu, X, Home, Info, Briefcase, Phone, MapPin } from "lucide-react";
+import { Shield, Menu, X, Home, Info, Briefcase,  MapPin, Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import logo from "../assets/logo.png"
 
 import "../css/navbar.css"
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navTo = useNavigate();
-
 
 
   useEffect(() => {
@@ -86,14 +86,15 @@ function Navbar() {
               </Link>
             </li>
 
-            <button className="nav-call">
-              <Phone size={18} color="#fff" style={{ marginRight: "6px" }} />
+            <button className="nav-call" onClick={() => window.open("https://wa.me/919977014334", "_blank")}
+            >
+              <FaWhatsapp  size={18} color="#fff" style={{ marginRight: "6px" }} />
             </button>
           </ul>
 
 
-          <button className="nav-call not-active">
-            <Phone size={18} color="#fff" style={{ marginRight: "6px" }} />
+          <button className="nav-call not-active" onClick={() => window.open("https://wa.me/919977014334", "_blank")}>
+            <FaWhatsapp  size={18} color="#fff" style={{ marginRight: "6px" }} />
           </button>
 
 

@@ -22,7 +22,7 @@ export const detailedServices = [
   {
     icon: "Search",
     title: "Background Checks",
-    imgUrl: "https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg",
+    imgUrl: "https://www.shutterstock.com/shutterstock/photos/752963539/display_1500/stock-vector-silhouette-missing-person-with-stamp-752963539.jpg",
     description: "Comprehensive background investigations for personal and professional purposes",
     features: [
       "Employment verification",
@@ -32,7 +32,8 @@ export const detailedServices = [
       "Reference verification",
       "Social media screening"
     ],
-    price: "Starting at $299"
+    price: "Starting at $299",
+
   },
   {
     icon: "Briefcase",
@@ -307,7 +308,8 @@ export const branches = [
     hours: "24/7 Available",
     services: ["Corporate Investigation", "Background Checks", "Surveillance", "Digital Forensics"],
     manager: "Robert Harrison",
-    established: "2005", imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
+    established: "2005", 
+    images: ["https://images.stockcake.com/public/8/1/3/81304422-3d32-4903-b271-42bc2251b046_large/mysterious-silhouetted-figure-stockcake.jpg","https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg","https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg","https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg"],
   },
   {
     id: 2,
@@ -321,7 +323,9 @@ export const branches = [
     hours: "24/7 Available",
     services: ["Entertainment Industry Cases", "Background Checks", "Surveillance", "Missing Persons"],
     manager: "Sarah Mitchell",
-    established: "2008",imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
+    established: "2008"
+    ,
+    images: ["https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg",],
 
   },
   {
@@ -337,7 +341,8 @@ export const branches = [
     services: ["Corporate Investigation", "Fraud Investigation", "Background Checks", "Legal Support"],
     manager: "Michael Chen",
     established: "2010"
-    ,imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
+    , 
+    images: ["https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg",],
   },
   {
     id: 4,
@@ -352,7 +357,8 @@ export const branches = [
     services: ["Oil & Gas Industry", "Corporate Investigation", "Background Checks", "Surveillance"],
     manager: "Jennifer Lopez",
     established: "2012"
-    ,imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
+  ,
+    images: ["https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg",],
   },
   {
     id: 5,
@@ -367,69 +373,11 @@ export const branches = [
     services: ["Maritime Investigation", "Background Checks", "Surveillance", "Fraud Investigation"],
     manager: "Carlos Rodriguez",
     established: "2013"
-    ,imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
-  },
-  {
-    id: 6,
-    city: "Boston",
-    region: "northeast",
-    address: "987 Sherlock Road, Floor 5",
-    state: "MA",
-    zip: "02101",
-    phone: "+1 (555) 678-9012",
-    email: "boston@truefind.com",
-    hours: "24/7 Available",
-    services: ["Academic Investigation", "Background Checks", "Corporate Investigation", "Digital Forensics"],
-    manager: "Emily Watson",
-    established: "2014"
-    ,imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
-  },
-  {
-    id: 7,
-    city: "Seattle",
-    region: "west",
-    address: "147 Tech Park Lane, Suite 300",
-    state: "WA",
-    zip: "98101",
-    phone: "+1 (555) 789-0123",
-    email: "seattle@truefind.com",
-    hours: "24/7 Available",
-    services: ["Tech Industry Cases", "Digital Forensics", "Background Checks", "Corporate Investigation"],
-    manager: "David Kim",
-    established: "2015"
-    ,imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
-  },
-  {
-    id: 8,
-    city: "Atlanta",
-    region: "south",
-    address: "258 Investigation Plaza, Building C",
-    state: "GA",
-    zip: "30301",
-    phone: "+1 (555) 890-1234",
-    email: "atlanta@truefind.com",
-    hours: "24/7 Available",
-    services: ["Background Checks", "Surveillance", "Corporate Investigation", "Missing Persons"],
-    manager: "Patricia Johnson",
-    established: "2016"
-    ,imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
-  },
-  {
-    id: 9,
-    city: "Denver",
-    region: "midwest",
-    address: "369 Detective Drive, Suite 100",
-    state: "CO",
-    zip: "80201",
-    phone: "+1 (555) 901-2345",
-    email: "denver@truefind.com",
-    hours: "24/7 Available",
-    services: ["Background Checks", "Surveillance", "Fraud Investigation", "Asset Verification"],
-    manager: "James Anderson",
-    established: "2017"
-    ,imgUrl: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRdum466TlXRB9VWMEiFMQJUH4aL6r8Iv2S35M1VlxFM71a5lafjPZ35cymB246yNSyiggvlpgH4NlIQE-YQm9tato&s=19"
+    ,
+    images: ["https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg",],
   },
   
+
 ];
 
 export const regions = [
