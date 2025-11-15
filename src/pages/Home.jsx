@@ -351,13 +351,16 @@ export default function Home() {
               Our team is available 24/7 for urgent cases and emergency
               situations
             </p>
-            <button
-              className="btn btn-primary-large"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              Call Now: (555) 123-4567
-            </button>
+            <a href="tel:+919977014334">
+              <button
+                className="btn btn-primary-large"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                Call Now: +91 99770 14334
+              </button>
+            </a>
+
           </div>
         </div>
       </section>

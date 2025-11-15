@@ -27,6 +27,8 @@ export function AnimatedStat({ target, suffix = "", startAnimation }) {
 export default function AboutStats() {
   const statsRef = useRef(null);
   const [startAnimation, setStartAnimation] = useState(false);
+  const currentYear = new Date().getFullYear();
+  const years = currentYear - 2021;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -49,7 +51,7 @@ export default function AboutStats() {
   return (
     <div className="about-stats" ref={statsRef}>
       <div className="stat">
-        <AnimatedStat target={2000} suffix="+" startAnimation={startAnimation} />
+        <AnimatedStat target={700} suffix="+" startAnimation={startAnimation} />
         <div className="stat-label">Cases Solved</div>
       </div>
       <div className="stat">
@@ -57,11 +59,11 @@ export default function AboutStats() {
         <div className="stat-label">Success Rate</div>
       </div>
       <div className="stat">
-        <AnimatedStat target={20} suffix="+" startAnimation={startAnimation} />
+        <AnimatedStat target={years} suffix="+" startAnimation={startAnimation} />
         <div className="stat-label">Years Experience</div>
       </div>
       <div className="stat">
-        <AnimatedStat target={50} suffix="+" startAnimation={startAnimation} />
+        <AnimatedStat target={30} suffix="+" startAnimation={startAnimation} />
         <div className="stat-label">Expert Team</div>
       </div>
     </div>

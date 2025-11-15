@@ -243,7 +243,7 @@ export const features = [
   { icon: "Clock", title: "24/7 Availability", description: "Round-the-clock service for urgent cases and emergency situations" },
   { icon: "Shield", title: "Complete Confidentiality", description: "Your privacy is our priority with secure communication and data protection" },
   { icon: "Award", title: "Experienced Team", description: "Professional investigators with decades of combined experience" },
-  { icon: "CheckCircle", title: "Proven Results", description: "98% success rate with over 2000 successfully resolved cases" }
+  { icon: "CheckCircle", title: "Proven Results", description: "98% success rate with over 700+ successfully resolved cases" }
 ];
 
 export const aboutFeatures = [

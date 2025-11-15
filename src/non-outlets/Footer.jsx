@@ -5,6 +5,9 @@ import GetInTouch from "../components/GetInTouch";
 import "../css/footer.css";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+  const years = currentYear - 2021;
+
   return (
     <>
       <GetInTouch />
@@ -14,11 +17,10 @@ function Footer() {
             {/* About Section */}
             <div className="footer-section">
               <div className="footer-logo">
-                <Shield size={32} />
-                <span>TRUE FIND DETECTIVE AGENCY</span>
+                <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763182157/unnamed_imgupscaler.ai_V1_Fast__2K_a61c5i.png" alt="" />
               </div>
               <p className="footer-description">
-                Professional investigative services with over 20 years of experience.
+                Professional investigative services with over {years}+ years of experience.
                 Discretion guaranteed, results delivered.
               </p>
               <div className="social-links">
