@@ -37,7 +37,11 @@
 .footer-section {
   position: relative;
 }
-
+.footer-section:nth-child(1),
+.footer-section:nth-child(2) {
+  border-right: 1px solid #ffffff33; /* you can change color */
+  padding-right: 10px; /* optional */
+}
 .footer-section h3 {
   color: #efc554;
   font-size: 1.3rem;
@@ -73,7 +77,8 @@
   letter-spacing: 1px;
   text-shadow: 0 3px 24px #daa52049;
 }
-.footer-logo svg {
+.footer-logo img {
+  height: 90px;
   color: #efc554;
   filter: drop-shadow(0 2px 6px #daa52055);
   flex-shrink: 0;

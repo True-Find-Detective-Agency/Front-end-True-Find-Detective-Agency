@@ -78,7 +78,7 @@ function About() {
               <div className="story-text">
                 <h2>Our Story</h2>
                 <p>
-                  Founded in 2005, True Find Detective Agency was established with a singular
+                  Founded in 2021, True Find Detective Agency was established with a singular
                   mission: to provide professional, reliable, and discreet investigative services
                   to individuals and businesses across the nation.
                 </p>
@@ -118,7 +118,7 @@ function About() {
                 ))}
               </div>
               <div >
-                <img src="https://images.stockcake.com/public/8/1/3/81304422-3d32-4903-b271-42bc2251b046_large/mysterious-silhouetted-figure-stockcake.jpg" alt="" />
+                <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763190857/dsd_auxf8r.png" alt="" />
               </div>
             </div>
           </div>
@@ -152,7 +152,7 @@ function About() {
           <div className="container">
             <h2 className="section-title">Our Achievements</h2>
             <div className="achievements-grid-container">
-                <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763115935/achievment_mapmsd.png" alt="" />
+                <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763190170/achievment_mapmsd_r18tls.png" alt="" />
               <div className="achievements-grid">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="achievement-item">
