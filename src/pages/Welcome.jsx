@@ -45,7 +45,7 @@ function Welcome({ onComplete }) {
 
                     {/* Logo */}
                     <div className="welcome-logo">
-                        <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763137904/unnamed_1_mfjcmk.png" alt="" />
+                        <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763182157/unnamed_imgupscaler.ai_V1_Fast__2K_a61c5i.png" alt="" />
                     </div>
 
                     {/* Text Content */}

@@ -183,13 +183,7 @@
 }
 
 /* Footer Bottom */
-.footer-bottom {
-  border-top: 1.5px solid rgba(218, 165, 32, 0.22);
-  background: rgba(20,18,18,0.89);
-  box-shadow: 0 2px 24px 0 #daa5200c inset;
-  padding: 1.2rem 0 1.2rem; /* Reduce padding to minimize height */
-  position: relative;
-}
+ 
 .footer-bottom-content {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import React, { useState,  } from "react"; // useEffect imported
+import React, { useState } from "react"; // useEffect imported
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./layouts/Layout";
@@ -19,11 +19,8 @@ import Welcome from "./pages/Welcome";
 const hasVisited = sessionStorage.getItem("visited");
 
 function App() {
-
-
   // Initialize showWelcome based on sessionStorage. If 'visited' is NOT present, show Welcome (true).
   const [showWelcome, setShowWelcome] = useState(!hasVisited);
-
 
   const handleWelcomeComplete = () => {
     // 1. Hide the welcome screen

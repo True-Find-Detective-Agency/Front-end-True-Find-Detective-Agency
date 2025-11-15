@@ -18,7 +18,7 @@ function Footer() {
                 <span>TRUE FIND DETECTIVE AGENCY</span>
               </div>
               <p className="footer-description">
-                Professional investigative services with over 20 years of experience. 
+                Professional investigative services with over 20 years of experience.
                 Discretion guaranteed, results delivered.
               </p>
               <div className="social-links">
@@ -52,24 +52,13 @@ function Footer() {
                 <li><Link to="/services/missing-persons">Missing Persons</Link></li>
               </ul>
             </div>
-
-            {/* Contact Info */}
-            
           </div>
 
-          {/* Bottom Bar */}
-          <div className="footer-bottom">
-            <div className="footer-bottom-content">
-              <p>&copy; 2025 True Find Detective Agency. All rights reserved.</p>
-              <div className="footer-bottom-links">
-                <Link to="/privacy">Privacy Policy</Link>
-                <span className="separator">|</span>
-                <Link to="/terms">Terms of Service</Link>
-                <span className="separator">|</span>
-                <Link to="/disclaimer">Disclaimer</Link>
-              </div>
-              <p className="license-text">Licensed & Insured Private Investigation Agency</p>
-            </div>
+
+
+          <div className="footer-bottom-content">
+            <p>&copy; 2025 True Find Detective Agency. All rights reserved.</p>
+            <p className="license-text">Licensed & Insured Private Investigation Agency</p>
           </div>
         </div>
       </footer>
