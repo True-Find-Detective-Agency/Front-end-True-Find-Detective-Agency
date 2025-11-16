@@ -25,7 +25,7 @@ export const services = [
   },
 
   {
-    icon: "HeartCrack",
+    icon: "GiWrappedHeart",
     title: "Extra-Marital Affair Detection",
     description: "Find the truth about suspected infidelity with discreet surveillance.",
     details: "Activity monitoring, photo/video evidence, location tracking, behaviour analysis.",
