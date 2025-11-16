@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 500,
       once: false, // important for scroll repeat
       mirror: true,
     });

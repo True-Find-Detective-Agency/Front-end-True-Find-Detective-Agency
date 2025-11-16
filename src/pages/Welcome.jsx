@@ -16,6 +16,8 @@ function Welcome({ onComplete }) {
         return () => clearTimeout(timer);
     }, []);
 
+
+    
     const handleContinue = () => {
         setFadeOut(true);
         setTimeout(() => {

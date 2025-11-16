@@ -23,15 +23,10 @@ function Branches() {
   const [startAnimation, setStartAnimation] = useState(false);
 
   // AOS Setup
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
-    });
+useEffect(() => {
+  AOS.refresh();
+}, []);
 
-    AOS.refresh();
-  }, []);
 
   // Intersection Observer for Stats
   useEffect(() => {

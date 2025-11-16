@@ -17,14 +17,9 @@ function ContactForm() {
     });
 
     // ⭐ Init AOS
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: false,
-            mirror: true
-        });
-        AOS.refresh();
-    }, []);
+  useEffect(() => {
+  AOS.refresh();
+}, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;

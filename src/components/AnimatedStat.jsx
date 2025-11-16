@@ -39,12 +39,8 @@ export default function AboutStats() {
 
   // init AOS once
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true
-    });
-  }, []);
+  AOS.refresh();
+}, []);
 
   // start counting when visible
   useEffect(() => {

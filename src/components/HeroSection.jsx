@@ -9,14 +9,9 @@ function HeroSection() {
   const navTo = useNavigate();
 
   // ⭐ Init AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 900,
-      once: false,
-      mirror: true,
-    });
-    AOS.refresh();
-  }, []);
+useEffect(() => {
+  AOS.refresh();
+}, []);
 
   return (
     <section className="hero" id="home">

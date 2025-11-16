@@ -67,7 +67,7 @@ useEffect(() => {
       {/* Services Section */}
       <section className="services" id="services">
         <div className="container">
-          <h2 className="section-title" data-aos="fade-up">
+          <h2 className="section-title" >
             Our Services
           </h2>
           <p

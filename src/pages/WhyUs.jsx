@@ -47,13 +47,9 @@ const iconMap = {
 function WhyUs() {
   // ⭐ Initialize AOS
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
-    });
     AOS.refresh();
   }, []);
+  
 
   return (
     <div className="main-container">

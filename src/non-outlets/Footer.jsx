@@ -11,15 +11,10 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   const years = currentYear - 2021;
 
-  // ⭐ Init AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 900,
-      once: false,
-      mirror: true,
-    });
-    AOS.refresh();
-  }, []);
+ useEffect(() => {
+   AOS.refresh();
+ }, []);
+ 
 
   return (
     <>

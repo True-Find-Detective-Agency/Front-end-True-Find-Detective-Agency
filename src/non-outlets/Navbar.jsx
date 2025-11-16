@@ -22,14 +22,10 @@ function Navbar() {
   const navTo = useNavigate();
 
   // ⭐ Init AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-      once: true,
-      easing: "ease-out",
-    });
-    AOS.refresh();
-  }, []);
+useEffect(() => {
+  AOS.refresh();
+}, []);
+
 
   const closeMenu = useCallback(() => setMenuOpen(false), []);
   const toggleMenu = useCallback(() => setMenuOpen((prev) => !prev), []);

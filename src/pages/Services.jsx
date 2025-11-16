@@ -22,15 +22,10 @@ function Services() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Select');
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
-    });
+useEffect(() => {
+  AOS.refresh();
+}, []);
 
-    AOS.refresh();
-  }, []);
 
   const categories = ['Select', ...new Set(detailedServices.map(s => s.title))];
 

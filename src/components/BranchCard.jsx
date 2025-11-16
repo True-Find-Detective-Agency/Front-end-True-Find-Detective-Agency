@@ -15,14 +15,9 @@ function BranchCard({ branch, index }) {
   const contentRef = useRef(null);
 
   // init AOS once
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
-    });
-    AOS.refresh();
-  }, []);
+useEffect(() => {
+  AOS.refresh();
+}, []);
 
   // Match image height
   useEffect(() => {

@@ -9,14 +9,9 @@ function GetInTouch() {
     const navTo = useNavigate();
 
     // ⭐ Init AOS
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: false,
-            mirror: true,
-        });
-        AOS.refresh();
-    }, []);
+useEffect(() => {
+  AOS.refresh();
+}, []);
 
     return (
         <div 

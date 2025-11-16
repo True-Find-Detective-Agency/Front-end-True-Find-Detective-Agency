@@ -17,14 +17,10 @@ const iconMap = {
 function About() {
   const navTo = useNavigate();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
-    });
-    AOS.refresh();
-  }, []);
+ useEffect(() => {
+   AOS.refresh();
+ }, []);
+ 
 
   return (
     <div className="main-container">
