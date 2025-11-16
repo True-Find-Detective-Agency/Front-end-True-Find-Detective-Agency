@@ -58,14 +58,21 @@ useEffect(() => {
       <div className="services-page">
 
         {/* Hero Section */}
-        <section className="services-hero" data-aos="fade-up">
-          <div className="container">
-            <h1 className="page-title" data-aos="fade-up">Our Services</h1>
-            <p className="page-subtitle" data-aos="fade-up" data-aos-delay="150">
-              Professional investigative solutions tailored to your specific needs
-            </p>
-          </div>
-        </section>
+     <section className="services-hero" data-aos="fade-up">
+  <div className="container">
+    <h1 className="page-title" data-aos="fade-up">
+      Our Services
+    </h1>
+    <p
+      className="page-subtitle"
+      data-aos="fade-up"
+      data-aos-delay="150"
+    >
+      Trusted investigation services designed to fit your needs with care and accuracy.
+    </p>
+  </div>
+</section>
+
 
         {/* Search Filter */}
         <section className="search-filter-section">

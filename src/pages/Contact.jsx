@@ -51,13 +51,19 @@ useEffect(() => {
 
         {/* Hero Section */}
         <section className="contact-hero" data-aos="fade-up">
-          <div className="container">
-            <h1 className="page-title" data-aos="fade-up">Contact Us</h1>
-            <p className="page-subtitle" data-aos="fade-up" data-aos-delay="100">
-              Get in touch for a confidential consultation. We're here to help 24/7.
-            </p>
-          </div>
-        </section>
+  <div className="container">
+    <h1 className="page-title" data-aos="fade-up">
+      Contact Us
+    </h1>
+    <p
+      className="page-subtitle"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      Reach out for a confidential discussion. Our team is available round the clock to assist you.
+    </p>
+  </div>
+</section>
 
         {/* Contact Info Cards */}
         <section className="contact-info-section">

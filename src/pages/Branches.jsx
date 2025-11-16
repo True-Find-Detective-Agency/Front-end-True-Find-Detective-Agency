@@ -60,14 +60,21 @@ useEffect(() => {
       <div className="branches-page">
 
         {/* HERO SECTION */}
-        <section className="branches-hero" data-aos="fade-up">
-          <div className="container">
-            <h1 className="page-title" data-aos="fade-up">Our Branches</h1>
-            <p className="page-subtitle" data-aos="fade-up" data-aos-delay="100">
-              Nationwide coverage with professional investigators in major cities across India
-            </p>
-          </div>
-        </section>
+       <section className="branches-hero" data-aos="fade-up">
+  <div className="container">
+    <h1 className="page-title" data-aos="fade-up">
+      Our Branch Locations
+    </h1>
+    <p
+      className="page-subtitle"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      We operate across major cities in India, offering trusted and discreet investigative services.
+    </p>
+  </div>
+</section>
+
 
         {/* SEARCH + FILTER */}
         <section className="search-filter-section">

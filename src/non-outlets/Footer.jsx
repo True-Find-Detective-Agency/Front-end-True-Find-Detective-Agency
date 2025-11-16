@@ -11,10 +11,14 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   const years = currentYear - 2021;
 
- useEffect(() => {
-   AOS.refresh();
- }, []);
- 
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      once: false,
+      mirror: true,
+    });
+    AOS.refresh();
+  }, []);
 
   return (
     <>
@@ -44,10 +48,29 @@ function Footer() {
               </p>
 
               <div className="social-links">
-                <a href="#"><Facebook size={20} /></a>
-                <a href="#"><Twitter size={20} /></a>
-                <a href="#"><Instagram size={20} /></a>
-                <a href="#"><Linkedin size={20} /></a>
+                <a
+                  href="https://www.facebook.com/share/19uAsiQ4WB/"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={20} />
+                </a>
+
+                <a
+                  href="https://x.com/truefind04?t=sdxnbn6KXw7-ipAgjdIqQg&s=08"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <Twitter size={20} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=zx3tx63"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
               </div>
             </div>
 
