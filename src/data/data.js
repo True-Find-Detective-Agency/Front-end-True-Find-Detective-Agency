@@ -10,8 +10,8 @@ export const env = {
   mobileCall: 9977014334,
   mobileCallView: "+91 99770 14334",
   email: "truefinddetectiveagency@gmail.com",
-  branchCount:5,
-  stateCovered:3
+  branchCount: 5,
+  stateCovered: 3
 }
 
 // data.js
@@ -658,9 +658,14 @@ export const branches = [
     manager: "Prachi Sonone",
     established: "2023",
     images: [
-      "https://images.stockcake.com/public/8/1/3/81304422-3d32-4903-b271-42bc2251b046_large/mysterious-silhouetted-figure-stockcake.jpg",
-      "https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg"
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318393/i3_yeix58.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/jb1_aj8g6m.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/jb4_ofaggy.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/i1_a4grzz.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/jb2_kuwhaz.jpg"
     ]
+
+
   },
 
   {
@@ -679,8 +684,13 @@ export const branches = [
     manager: "Rachna Vedi",
     established: "2022",
     images: [
-      "https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg"
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/bt5_wqidfc.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/bt3_oiwntj.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/jb2_kuwhaz.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/jb4_ofaggy.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/i1_a4grzz.jpg"
     ]
+
   },
 
   {
@@ -699,8 +709,14 @@ export const branches = [
     manager: "Achal Patil",
     established: "2024",
     images: [
-      "https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg"
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/jb1_aj8g6m.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318393/i3_yeix58.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/bt3_oiwntj.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/jb4_ofaggy.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/i1_a4grzz.jpg"
     ]
+
+
   },
 
   {
@@ -719,8 +735,13 @@ export const branches = [
     manager: "Neelam Saxena",
     established: "2022",
     images: [
-      "https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg"
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/jb4_ofaggy.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/jb2_kuwhaz.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318393/i3_yeix58.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/bt3_oiwntj.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/bt5_wqidfc.jpg"
     ]
+
   },
 
   {
@@ -739,8 +760,14 @@ export const branches = [
     manager: "Rakesh Malhotra",
     established: "2024",
     images: [
-      "https://images.stockcake.com/public/5/f/e/5fe7ac78-c49a-4914-9e39-f1c10bdd7b82_large/achievement-recognized-professionally-stockcake.jpg"
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/bt3_oiwntj.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/jb4_ofaggy.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318393/i3_yeix58.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318391/i1_a4grzz.jpg",
+      "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763318392/jb2_kuwhaz.jpg"
     ]
+
+
   },
 
 ];

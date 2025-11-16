@@ -55,7 +55,7 @@ function Branches() {
         {/* Hero */}
         <section className="branches-hero">
           <div className="container">
-            
+
             <h1 className="page-title">Our Branches</h1>
             <p className="page-subtitle">
               Nationwide coverage with professional investigators in major cities across India
@@ -108,29 +108,9 @@ function Branches() {
                 {filteredBranches.map((branch, index) => (
                   <div
                     key={branch.id}
-                    className={`branch-card ${index % 2 === 0 ? "even-card" : "odd-card"}`}
+                    className={`branch-card odd-card"}`}
                   >
 
-
-                    {/* LEFT IMAGE for odd index */}
-
-                    {index % 2 === 0 && (
-                      <div className="branch-img-box">
-                        <Swiper
-                          slidesPerView={1}
-                          loop={true}
-                          autoplay={{ delay: 1000 }}
-                          speed={900}
-                          modules={[Autoplay]}
-                        >
-                          {branch.images.map((img) => (
-                            <SwiperSlide key={img}>
-                              <img src={img} alt={`${branch.city} branch`} />
-                            </SwiperSlide>
-                          ))}
-                        </Swiper>
-                      </div>
-                    )}
 
 
                     {/* ALL CONTENT IN ONE COLUMN */}
@@ -208,23 +188,24 @@ function Branches() {
 
                     </div>
 
-                    {index % 2 !== 0 && (
-                      <div className="branch-img-box">
-                        <Swiper
-                          slidesPerView={1}
-                          loop={true}
-                          autoplay={{ delay: 1000 }}
-                          speed={900}
-                          modules={[Autoplay]}
-                        >
-                          {branch.images.map((img) => (
-                            <SwiperSlide key={img}>
-                              <img src={img} alt={`${branch.city} branch`} />
-                            </SwiperSlide>
-                          ))}
-                        </Swiper>
-                      </div>
-                    )}
+
+                    <div className="branch-img-box">
+                      <Swiper
+                        slidesPerView={1}
+                        loop={true}
+                        autoplay={{ delay: 1200 }}
+                        speed={900}
+                        modules={[Autoplay]}
+                      >
+                        {branch.images.map((img) => (
+                          <SwiperSlide key={img}>
+                            <img src={img} alt={branch.city} className="branch-img" />
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
+                    </div>
+
+
 
                   </div>
                 ))}
