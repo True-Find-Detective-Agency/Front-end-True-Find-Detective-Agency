@@ -4,6 +4,12 @@ import {
   Heart, Scale, Laptop, Camera, Lock, HeartCrack,
   FileWarning, UserSearch, Activity, Phone, UserCheck
 } from "lucide-react";
+import {
+  ShieldAlert,     // criminal case    // personal detective
+  AlertTriangle,   // anti stalking
+  MapPin,          // address report
+} from "lucide-react";
+
 
 import "../css/services.css";
 import { detailedServices } from '../data/data';
@@ -11,20 +17,17 @@ import { detailedServices } from '../data/data';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const iconMap = {
-  Search, Shield, Eye, FileSearch, Users, Briefcase, Home, Heart,
-  Scale, Laptop, Camera, Lock, HeartCrack, FileWarning,
-  UserSearch, Activity, Phone, UserCheck
-};
+const iconMap = {Search, Shield, Eye, FileSearch, Users, Briefcase, Home, Heart,
+  Scale, Laptop, Camera, Lock, HeartCrack, FileWarning, UserSearch, Activity, Phone, UserCheck, ShieldAlert, AlertTriangle, MapPin,};
 
 function Services() {
   const [activeService, setActiveService] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Select');
 
-useEffect(() => {
-  AOS.refresh();
-}, []);
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
 
 
   const categories = ['Select', ...new Set(detailedServices.map(s => s.title))];
@@ -58,20 +61,20 @@ useEffect(() => {
       <div className="services-page">
 
         {/* Hero Section */}
-     <section className="services-hero" data-aos="fade-up">
-  <div className="container">
-    <h1 className="page-title" data-aos="fade-up">
-      Our Services
-    </h1>
-    <p
-      className="page-subtitle"
-      data-aos="fade-up"
-      data-aos-delay="150"
-    >
-      Trusted investigation services designed to fit your needs with care and accuracy.
-    </p>
-  </div>
-</section>
+        <section className="services-hero" data-aos="fade-up">
+          <div className="container">
+            <h1 className="page-title" data-aos="fade-up">
+              Our Services
+            </h1>
+            <p
+              className="page-subtitle"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              Trusted investigation services designed to fit your needs with care and accuracy.
+            </p>
+          </div>
+        </section>
 
 
         {/* Search Filter */}

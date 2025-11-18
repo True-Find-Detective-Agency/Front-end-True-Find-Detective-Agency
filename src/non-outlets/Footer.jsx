@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { FaWhatsapp, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import GetInTouch from "../components/GetInTouch";
 import "../css/footer.css";
 
@@ -37,10 +37,7 @@ function Footer() {
               data-aos-delay="200"
             >
               <div className="footer-logo">
-                <img
-                  src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763133066/ChatGPT_Image_Nov_13_2025_11_28_05_PM-Photoroom_samgrp.png"
-                  alt=""
-                />
+                <img src="https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763182157/unnamed_imgupscaler.ai_V1_Fast__2K_a61c5i.png" alt="" />
               </div>
 
               <p className="footer-description">
@@ -49,29 +46,10 @@ function Footer() {
               </p>
 
               <div className="social-links">
-                <a
-                  href={env.fb}
-                  target="_blank"
-                  aria-label="Facebook"
-                >
-                  <Facebook size={20} />
-                </a>
-
-                <a
-                  href={env.twitter}
-                  target="_blank"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={20} />
-                </a>
-
-                <a
-                  href={env.instagram}
-                  target="_blank"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={20} />
-                </a>
+                <a href={env.fb} target="_blank" aria-label="Facebook" ><FaFacebookF size={20} /> </a>
+                <a href={env.twitter} target="_blank" aria-label="Twitter"> <FaTwitter size={20} /></a>
+                <a href={env.instagram} target="_blank" aria-label="Instagram">  <FaInstagram size={20} /></a>
+                <a href={env.whatsapp} target="_blank" aria-label="Instagram">  <FaWhatsapp size={20} /></a>
               </div>
             </div>
 

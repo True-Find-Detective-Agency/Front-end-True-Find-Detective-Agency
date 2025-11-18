@@ -63,6 +63,7 @@
     filter: drop-shadow(0 1px 1px rgba(218, 165, 32, 0.4));
 }
 
+
 .nav-logo img:hover {
     transform: scale(1.08);
     filter: drop-shadow(0 0 6px rgba(255, 217, 0, 0.5));
@@ -356,5 +357,17 @@
 
     .nav-links li {
         width: 100% !important;
+    }
+}
+
+@media (max-width:500px) {
+    .nav-logo img {
+        height: 45px;
+    }
+    .nav-container{
+        padding: 5px 5px 0 5px; 
+    }
+    .menu-toggle{
+        padding: 0.3rem;
     }
 }

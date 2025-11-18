@@ -116,7 +116,6 @@
 .social-links a:hover {
   background: linear-gradient(135deg, #f9eca6dd, #daa520fa 95%);
   color: #1f2122;
-  transform: scale(1.14) translateY(-4px);
   box-shadow: 0 8px 32px #f3d16854, 0 0 6px #efc55498 inset;
   border-color: #ffeeaf49;
 }

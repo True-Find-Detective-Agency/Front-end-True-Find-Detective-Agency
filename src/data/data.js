@@ -600,7 +600,185 @@ export const detailedServices = [
         desc: "We check new contacts or friends added suddenly."
       }
     ]
-  }
+  },
+
+  {
+  icon: "ShieldAlert",
+  title: "Criminal Case Investigation",
+  imgUrl: "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763454346/criminalcase_mkaxtj.png",
+
+  description:
+    "We check any criminal matter with full proof and correct details. We find truth, evidence and full case background.",
+
+  features: [
+    {
+      title: "Case Check",
+      desc: "We study the full case record and find real facts."
+    },
+    {
+      title: "Police Record",
+      desc: "We check police reports and past criminal history."
+    },
+    {
+      title: "Evidence Search",
+      desc: "We collect proof like photos, videos or witness info."
+    },
+    {
+      title: "Court Record",
+      desc: "We check if the person has any running or old court case."
+    },
+    {
+      title: "Behaviour Check",
+      desc: "We study their actions, habits and past behaviour."
+    }
+  ]
+},
+{
+  icon: "UserSearch",
+  title: "Personal Detective Service",
+  imgUrl: "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763455396/c7211b78-f7ff-4c0e-ad78-fb5fa8aee3a0_kwoxcu.png",
+  description: "We handle all personal cases with privacy. We find truth about people, activities and hidden things.",
+  features: [
+    {
+      title: "Daily Activity",
+      desc: "We track where the person goes and what they do."
+    },
+    {
+      title: "Movement Check",
+      desc: "We quietly follow and note all movements."
+    },
+    {
+      title: "Relationship Check",
+      desc: "We check who they meet and talk to."
+    },
+    {
+      title: "Truth Report",
+      desc: "We give a full and clear report with proof."
+    }
+  ]
+},
+{
+  icon: "AlertTriangle",
+  title: "Anti-Stalking Help",
+  imgUrl: "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763454349/anti_stalking_iwyh39.png",
+  description: "We protect you from stalking. We track the person and collect proof so you stay safe.",
+  features: [
+    {
+      title: "Stalker Check",
+      desc: "We find who is following or troubling you."
+    },
+    {
+      title: "Evidence",
+      desc: "We collect proof like photos, videos and timings."
+    },
+    {
+      title: "Safety Plan",
+      desc: "We guide you on how to stay safe."
+    },
+    {
+      title: "Police Help",
+      desc: "We prepare strong proof for police action."
+    }
+  ]
+},
+{
+  icon: "MapPin",
+  title: "Address Report",
+  imgUrl: "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763454346/address_report_x8m76u.png",
+
+  description: "We confirm full address details with past history and neighbour check.",
+  features: [
+    {
+      title: "Current Address",
+      desc: "We verify where the person stays now."
+    },
+    {
+      title: "Old Address",
+      desc: "We check their past living places."
+    },
+    {
+      title: "Neighbour Check",
+      desc: "Silent check to know behaviour and reputation."
+    },
+    {
+      title: "House Details",
+      desc: "We confirm if the house is owned or rented."
+    }
+  ]
+},
+{
+  icon: "Phone",
+  title: "Phone Number Search",
+  imgUrl: "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763454397/phone_number_seach_fmr32l.png",
+  description: "We find the real owner of a phone number and check activity with full privacy.",
+  features: [
+    {
+      title: "Owner Details",
+      desc: "We find who uses the phone number."
+    },
+    {
+      title: "Address Check",
+      desc: "We confirm the linked address."
+    },
+    {
+      title: "Activity Scan",
+      desc: "We check call behaviour and pattern."
+    },
+    {
+      title: "Fraud Check",
+      desc: "We confirm if the number is used for scams."
+    }
+  ]
+},
+{
+  icon: "HeartCrack",
+  title: "Spouse Cheating Investigation",
+  imgUrl: "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763454472/spouse_cheating_ppfesm.png",
+  description: "We check partner’s loyalty with full privacy. We give proof and clear truth.",
+  features: [
+    {
+      title: "Daily Tracking",
+      desc: "We see where your partner goes daily."
+    },
+    {
+      title: "Meeting Check",
+      desc: "We find who they meet and talk to."
+    },
+    {
+      title: "Photo & Video Proof",
+      desc: "We collect solid proof for you."
+    },
+    {
+      title: "Behaviour Check",
+      desc: "We study sudden changes in behaviour."
+    }
+  ]
+},
+{
+  icon: "UserCheck",
+  title: "Teenager Monitoring",
+  imgUrl: "https://res.cloudinary.com/dmqa8d6yq/image/upload/v1763454973/a9e5a3cb-3455-4d7d-9fc6-555045b37726_zhpqrt.png",
+  description:"We keep your child safe by checking their routine, friends, online activity and daily movement.",
+  features: [
+    {
+      title: "Daily Routine Check",
+      desc: "We check where they go and what they do."
+    },
+    {
+      title: "Friend Circle",
+      desc: "We see who they spend time with."
+    },
+    {
+      title: "Online Activity",
+      desc: "We check online behaviour and risky activity."
+    },
+    {
+      title: "Safety Report",
+      desc: "We give a full report to keep your child safe."
+    }
+  ]
+},
+
 ];
 
 
